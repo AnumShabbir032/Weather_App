@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 100vh;
+}
+.main{
+    border: 1px solid red;
+    width: 80%;
+    margin: 40px 20px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    border: 1px solid rgb(11, 131, 47);
+    height: 500px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-left{
+    border: 1px slateblue solid;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-main{
+border: 1px solid #102869;
+}
+.left-down{
+    border: 1px solid #008192;
+    display: flex;
+    /* color: red; */
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-down>div{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+.left-down>div>span{
+    font-size: 10px;
+}
+.content-right{
+    border: 1px slateblue solid;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.img>img{
+    display:none;
+}
+.right-up{
+    border: 1px rgb(104, 16, 6) solid;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.right-main{
+    border: 1px salmon solid;
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end; */
+}
+#tempC{
+    border: 1px slateblue solid;
+    font-size: 80px;
+}
+#conditon{
+    border: 1px slateblue solid;
+}
+/* Media Qurey For Small Screen Mobile */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-left , .content-right{
+        width: 100%;
+    }
+}
