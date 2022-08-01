@@ -1,24 +1,24 @@
 // 306540cf42a84b6d97e124622223007
 
-function getWeather() {
+// function getWeather() {
 
-  let cityName = document.getElementById("cityName").value;
-  let weather_icon = document.getElementById("weather_icon");
-  let tempC = document.getElementById('tempC');
-  let conditon = document.getElementById("conditon");
-  // let tempF = document.getElementById("tempF");
-  let humdity = document.getElementById("humdity");
-  // let visibility = document.getElementById("visibility");
-  // let wind = document.getElementById("wind");
-  // let feelslike_c = document.getElementById("feelslike_c");
-  // let feelslike_f = document.getElementById("feelslike_f");
-  axios.get(`https://api.weatherapi.com/v1/current.json?key=306540cf42a84b6d97e124622223007&q=${cityName}&aqi=no
-`)
-    .then(function (response) {
+//   let cityName = document.getElementById("cityName").value;
+//   let weather_icon = document.getElementById("weather_icon");
+//   let tempC = document.getElementById('tempC');
+//   let conditon = document.getElementById("conditon");
+//   // let tempF = document.getElementById("tempF");
+//   let humdity = document.getElementById("humdity");
+//   // let visibility = document.getElementById("visibility");
+//   // let wind = document.getElementById("wind");
+//   // let feelslike_c = document.getElementById("feelslike_c");
+//   // let feelslike_f = document.getElementById("feelslike_f");
+//   axios.get(`https://api.weatherapi.com/v1/current.json?key=306540cf42a84b6d97e124622223007&q=${cityName}&aqi=no
+// // `)
+//     .then(function (response) {
 
 
-      let weatherData = response.data;
-      console.log(weatherData);
+//       let weatherData = response.data;
+//       console.log(weatherData);
       // console.log("humdity" + weatherData.current.humidity);
       // console.log("temp F" + weatherData.current.temp_f);
       // console.log("visibility" + weatherData.current.vis_km);
@@ -53,10 +53,10 @@ function getWeather() {
       // console.log("location" + weatherData.location.localtime);
 
 
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-    })
+//     })
+//     .catch(function (error) {
+//       // handle error
+//       console.log(error);
+//     })
 
-}
+// }
