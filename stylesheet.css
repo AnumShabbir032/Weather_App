@@ -177,7 +177,7 @@ div#date {
     align-items: center;
     margin: 3px;
     padding: 5px;
-    color: #2d3436;
+    color: white;
 }
 
 small#date {
@@ -189,19 +189,19 @@ small#date {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    color: #f9f9f969;
+    color: white;
 }
 
 .right-up>h1 {
     font-weight: 400;
-    color: #ffffff87;
+    color: white;
 }
 
 .right-main {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    color: #2d3436;
+    color: White;
 }
 
 #temp,
