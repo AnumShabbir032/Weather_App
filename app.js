@@ -75,7 +75,7 @@ function getWeather() {
 
                 document.body.style.backgroundImage = "url('images/snow.jpg')";
 
-            } else if (weatherData.current.condition.text == 'Thunderstorm' || weatherData.current.condition.text == 'Tornadoes' || weatherData.current.condition.text == 'Stormy') {
+            } else if (weatherData.current.condition.text == 'Thunderstorm' || weatherData.current.condition.text == 'Patchy light rain with thunder'|| weatherData.current.condition.text == 'Tornadoes' || weatherData.current.condition.text == 'Stormy') {
 
                 document.getElementById("right").style.backgroundImage = `url('./image/day/strom.jpg')`
 
