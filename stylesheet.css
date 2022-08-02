@@ -1,92 +1,244 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border: 1px solid;
     height: 100vh;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2e0232 0%, #03253c 74%);
+
 }
-.main{
-    border: 1px solid red;
+.wrapper>h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: #9e83a1;;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    padding: 10px 14px;
+    font-size: 14px !important;
+    width: 50%;
+    outline: none;
+    cursor: text;
+    color: #666666;
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.6px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+input:focus {
+    background-image: linear-gradient(315deg, #55195a 0%, #00233c 74%);
+}
+
+#error {
+    display: none;
+    border: 1px solid;
+    color: white;
+}
+
+button {
+    background-color: #54045a;
+    border: none;
+    color: white;
+    width: 40%;
+    height: 45px;
+    border-radius: 7px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    margin: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-image: linear-gradient(315deg, #54045a 0%, #01263e 74%);
+}
+
+.main {
+    border: 1px solid #534554;
     width: 80%;
     margin: 40px 20px;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    color: white;
+    border-radius: 25px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+
 }
-.container{
-    border: 1px solid rgb(11, 131, 47);
-    height: 500px;
+
+.container {
+    height: 570px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 25px;
+    background-color: #7f5a83;
+    background-image: linear-gradient(144deg, #043e68 0%, #3e0742 74%);
+    align-content: center;
 }
-.content-left{
-    border: 1px slateblue solid;
+
+.content-left {
+    /* border: 1px slateblue solid; */
     width: 50%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.left-main{
-border: 1px solid #102869;
-}
-.left-down{
-    border: 1px solid #008192;
+
+.left-down {
     display: flex;
-    /* color: red; */
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
 }
-.left-down>div{
-    width: 50%;
+
+.left-down>div {
+    width: 48%;
+    margin: 4px;
     display: flex;
-    flex-wrap: wrap;
     padding: 20px;
     text-align: center;
+    justify-content: center;
+    flex-direction: row;
 }
-.left-down>div>span{
+
+.left-down>div>span {
     font-size: 10px;
 }
-.content-right{
-    border: 1px slateblue solid;
-    width: 50%;
+
+div#date {
+    color: white;
+    border: 1px solid;
+    height: 115px;
+}
+
+.content-right {
+    width: 47%;
+    height: 540px;
+    padding: 15px;
+    margin: 10px;
     display: flex;
-    flex-direction: column;
+    background-image: url(./image/day/Papel\ de\ parede.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+    flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    backdrop-filter: blur(2.6px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
-.img>img{
-    display:none;
+
+.location-div {
+    margin: 3px;
+    padding: 5px;
+    font-weight: 700;
 }
-.right-up{
-    border: 1px rgb(104, 16, 6) solid;
+
+.img>img {
+    display: none;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+    padding: 5px;
+    color: #2d3436;
+}
+
+small#date {
+    font-size: small;
+    margin: 5px;
+}
+
+.right-up {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    color: #f9f9f969;
 }
-.right-main{
-    border: 1px salmon solid;
+
+.right-up>h1 {
+    font-weight: 400;
+    color: #ffffff87;
+}
+
+.right-main {
     display: flex;
-    /* flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-end; */
+    align-items: flex-end;
+    color: #2d3436;
 }
-#tempC{
-    border: 1px slateblue solid;
-    font-size: 80px;
+
+#temp,
+#humd,
+#visib,
+#windy,
+#feelslikec,
+#feelslikef {
+    font-size: 16px;
+    color: #cfcfcf;
+    display: flex;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
-#conditon{
-    border: 1px slateblue solid;
+
+#tempF,
+#humdity,
+#visibility,
+#wind,
+#feelslike_f,
+#feelslike_c {
+    font-size: 24px;
+    font-weight: 400;
+    color: #9e83a1;
 }
+
+#tempC {
+    font-size: 72px;
+}
+
 /* Media Qurey For Small Screen Mobile */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .container {
@@ -95,7 +247,9 @@ border: 1px solid #102869;
         justify-content: center;
         flex-direction: column;
     }
-    .content-left , .content-right{
+
+    .content-left,
+    .content-right {
         width: 100%;
     }
 }
