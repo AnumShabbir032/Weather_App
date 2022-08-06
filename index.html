@@ -10,7 +10,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&display=swap" rel="stylesheet">
 
-        <title>Weather App</title>
+    <title>Weather App</title>
 </head>
 
 <body>
@@ -42,11 +42,10 @@
                         <!-- <h1 id="location_name"></h1> <br> -->
                         <!-- <small id="date"></small> -->
                     </div>
-
                     <div class="left-down">
                         <div id="temp">
                             <h1 id="tempF"></h1>
-                           <small>°F</small>
+                            <small>°F</small>
                         </div>
                         <div id="humd">
                             <h1 id="humdity"></h1>
@@ -56,17 +55,21 @@
                             <h1 id="visibility"></h1>
                             <small>Visibility/km</small>
                         </div>
+                        <div id="pressure">
+                            <h1 id="pressure_mb"></h1>
+                            <small>Pressure</small>
+                        </div>
                         <div id="windy">
                             <h1 id="wind"></h1>
                             <small>Wind/kph</small>
                         </div>
-                        <div id="feelslikec">
+                        <!-- <div id="feelslikec">
                             <h1 id="feelslike_f"></h1>
                             <small>Feelslike_°F</small>
-                        </div>
-                        <div id="feelslikef">
-                            <h1 id="feelslike_c"></h1>
-                            <small>Feelslike_°C</small>
+                        </div> -->
+                        <div id="wind_d">
+                            <h1 id="wind_dir"></h1>
+                            <small>Wind dircetion</small>
                         </div>
                     </div>
                 </div>
@@ -74,21 +77,26 @@
 
 
                 <div class="content-right" id="right">
+                    <div class="div">
 
-                    <div class="right-main">
-                        <div id="tempC">
+
+                        <div class="right-main">
+                            <div id="tempc">
+                                <h1 id="tempC"></h1>
+                            </div>
+                            <div class="location-div">
+                                <h1 id="location_name"></h1>
+                                <small id="date"></small>
+                            </div>
+
                         </div>
-                        <div class="location-div">
-                            <h1 id="location_name"></h1>
-                            <small id="date"></small>
+                        <div class="img-box">
+                            <div class="img">
+                                <img src="" alt="" width="60px" height="60px" id="weather_icon">
+                            </div>
+                            <div id="conditon"></div>
                         </div>
 
-                    </div>
-                    <div class="img-box">
-                        <div class="img">
-                            <img src="" alt="" width="80px" height="80px" id="weather_icon">
-                        </div>
-                        <div id="conditon"></div>
                     </div>
 
                 </div>
