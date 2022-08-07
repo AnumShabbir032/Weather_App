@@ -107,7 +107,6 @@ button:hover {
 }
 
 .content-left {
-    /* border: 1px slateblue solid; */
     width: 50%;
     padding: 20px;
     display: flex;
@@ -138,7 +137,6 @@ button:hover {
 
 div#date {
     color: white;
-    /* border: 1px solid; */
     height: 115px;
 }
 
@@ -159,8 +157,6 @@ div#date {
     justify-content: flex-end;
     flex-wrap: wrap;
     border-radius: 25px;
-    /* backdrop-filter: blur(2.6px);
-    border: 1px solid rgba(255, 255, 255, 0.14); */
 }
 
 .div {
@@ -177,17 +173,10 @@ div#date {
 }
 
 .location-div {
-    /* margin: 3px;
-    padding: 5px;
-    font-weight: 700; */
-
-
     margin: 3px;
     padding: 5px;
     font-weight: 700;
     font-size: 14px;
-    /* border: 1px solid; */
-
 }
 
 .img>img {
@@ -195,23 +184,12 @@ div#date {
 }
 
 .img-box {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3px;
-    padding: 5px;
-    color: white; */
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 3px; */
     padding: 5px;
     color: white;
-    /* border: 1px solid; */
     width: 45%;
-
 }
 
 small#date {
@@ -276,30 +254,23 @@ small#date {
 }
 
 #tempc {
-    /* font-size: 72px; */
-
     font-size: 30px;
-    /* border: 1px solid; */
 }
-/* End Media Queries for pc Laptop  */
-@media(max-width: 1024px){
 
-}
- /* Media Queries for Tablet */ 
- @media (max-width: 768px)  {  
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
     .wrapper {
         height: 0%;
-        
     }
+
     .main {
         border: 1px solid #534554;
         width: 80%;
         margin: 20px 20px;
         height: 100vh;
     }
+
     .container {
-        /* height: 570px; */
-        /* width: 90%; */
         height: 92%;
         display: flex;
         flex-wrap: nowrap;
@@ -307,18 +278,15 @@ small#date {
         align-content: center;
         flex-direction: column;
     }
+
     .content-left {
-        /* border: 1px slateblue solid; */
         width: 100%;
-        /* padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; */
-    
     }
+
     .content-right {
         width: 96%;
     }
+
     .left-down {
         display: flex;
         flex-direction: row;
@@ -326,12 +294,25 @@ small#date {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    #temp, #humd, #visib, #windy, #pressure, #wind_d {
+
+    #temp,
+    #humd,
+    #visib,
+    #windy,
+    #pressure,
+    #wind_d {
         font-size: 16px;
     }
-    #tempF, #humdity, #visibility, #wind, #pressure_mb, #wind_dir {
+
+    #tempF,
+    #humdity,
+    #visibility,
+    #wind,
+    #pressure_mb,
+    #wind_dir {
         font-size: 19px;
     }
+
     .right-up {
         font-size: 12px;
         display: flex;
@@ -342,31 +323,113 @@ small#date {
         height: 100px;
         align-content: center;
     }
+
     .left-down>div {
         width: 31%;
     }
+
     #tempc {
-        /* font-size: 72px; */
         font-size: 25px;
     }
+
     .img-box {
         font-size: 14px;
     }
 }
+
 /* Media Qurey For Small Screen Mobile */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .container {
         display: flex;
-        /* flex-wrap: wrap; */
         justify-content: center;
         flex-direction: column;
     }
 
+    input {
+        padding: 6px 14px;
+    }
+
+    .right-up {
+        font-size: 10px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 10px;
+    }
+
     .content-left,
     .content-right {
-        width: 100%;
+        width: 94%;
     }
+
+    .content-right {
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
     .left-down>div {
-        width: 100%;
+        width: 45%;
+        padding: 10px;
+    }
+
+    #temp,
+    #humd,
+    #visib,
+    #windy,
+    #pressure,
+    #wind_d {
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    #tempF,
+    #humdity,
+    #visibility,
+    #wind,
+    #pressure_mb,
+    #wind_dir {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .div {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .location-div {
+        margin: 3px;
+        padding: 2px;
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    .img-box {
+        font-size: 10px;
+    }
+
+    .img>img {
+        display: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    small#date {
+        font-size: small;
+        margin: 5px;
+        font-size: 10px;
+    }
+
+    #tempc {
+        font-size: 18px;
     }
 }
